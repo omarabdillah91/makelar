@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1011718773521",
+    "firebase_url": "https://makelarapplication.firebaseio.com",
+    "project_id": "makelarapplication",
+    "storage_bucket": "makelarapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011718773521:android:e3e998072dd8f8f6",
+        "android_client_info": {
+          "package_name": "com.example.application.makelar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011718773521-86rebjb14anvtt3mrnfo9c9n7p1m4sbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzUqBPNanWPq4w2ofKOFpMtMJkUcr3FnU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

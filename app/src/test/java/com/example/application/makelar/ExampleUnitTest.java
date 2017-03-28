@@ -1,4 +1,4 @@
-package com.example.omaabdillah.makelar;
+package com.example.application.makelar;
 
 import org.junit.Test;
 
