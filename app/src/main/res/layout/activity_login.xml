@@ -86,6 +86,8 @@
             android:layout_height="wrap_content"
             android:text="Create new account?"
             android:gravity="center_horizontal"
+            android:clickable="true"
+            android:onClick="onClick"
             android:textColor="@color/colorPrimaryDark"/>
         <TextView
             android:id="@+id/forgetpassword"
@@ -94,6 +96,8 @@
             android:layout_height="wrap_content"
             android:text="Reset your password?"
             android:gravity="center_horizontal"
+            android:clickable="true"
+            android:onClick="onClick"
             android:textColor="@color/colorPrimaryDark"/>
     </LinearLayout>
 

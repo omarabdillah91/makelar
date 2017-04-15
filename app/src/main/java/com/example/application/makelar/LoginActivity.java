@@ -67,6 +67,8 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressDialog progressBar;
     String email = "";
     String password = "";
+    private TextView create_account;
+    private TextView reset_password;
 
     // listener
     View.OnClickListener onClick = new View.OnClickListener() {
@@ -90,12 +92,11 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
-
         mPasswordView = (EditText) findViewById(R.id.password);
-
+        create_account = (TextView) findViewById(R.id.create_account);
+        reset_password = (TextView) findViewById(R.id.reset_password);
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(onClick);
-
         mAuth = FirebaseAuth.getInstance();
         // [START auth_state_listener]
         mAuthListener = new FirebaseAuth.AuthStateListener() {
@@ -172,6 +173,13 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
         } else {
             Log.d("debug", "no user logged in");
+        }
+    }
+    public void onClick(View v) {
+        if(v.getId() == R.id.newaccount) {
+            startActivity(new Intent(LoginActivity.this, RegistrationActivity.class));
+        } else if (v.getId() == R.id.forgetpassword) {
+            startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
         }
     }
 }

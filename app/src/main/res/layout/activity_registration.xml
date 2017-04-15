@@ -76,16 +76,14 @@
             android:inputType="date"
             style="@style/text_style"
             />
-        <EditText
-            android:id="@+id/sex"
+        <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Sex"
-            android:inputType="text"
             style="@style/text_style"
-            />
+            android:id="@+id/sex"/>
     </LinearLayout>
     <Button
+        android:id="@+id/create_account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Create Account"
