@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1011718773521-r722477nqb627cbgp0b2gl0r1svceoi7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.application.makelar",
+            "certificate_hash": "45d5b8be5c6c9d5d6871cfe9aa88066612fb663a"
+          }
+        },
+        {
           "client_id": "1011718773521-86rebjb14anvtt3mrnfo9c9n7p1m4sbp.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011718773521-86rebjb14anvtt3mrnfo9c9n7p1m4sbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

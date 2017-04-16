@@ -12,6 +12,7 @@ public class User {
     public String date_of_birth;
     public String phone_number;
     public String sex;
+    public String description;
     public String address;
     public String address_village;
     public String address_district;
@@ -19,23 +20,25 @@ public class User {
     public String address_province;
     public String address_postal_code;
 
-    public User(String username, String email, String password, String date_of_birth, String phone_number, String sex) {
+    public User(String username, String email, String password, String date_of_birth, String phone_number, String sex, String description) {
         this.username = username;
         this.email = email;
         this.password = password;
         this.date_of_birth = date_of_birth;
         this.phone_number = phone_number;
         this.sex = sex;
+        this.description = description;
     }
 
 
-    public User(String username, String email, String password, String date_of_birth, String phone_number, String sex, String address, String address_village, String address_district, String address_regency, String address_province, String address_postal_code) {
+    public User(String username, String email, String password, String date_of_birth, String phone_number, String sex, String description, String address, String address_village, String address_district, String address_regency, String address_province, String address_postal_code) {
         this.username = username;
         this.email = email;
         this.password = password;
         this.date_of_birth = date_of_birth;
         this.phone_number = phone_number;
         this.sex = sex;
+        this.description = description;
         this.address = address;
         this.address_village = address_village;
         this.address_district = address_district;
@@ -110,6 +113,14 @@ public class User {
 
     public String getAddress_village() {
         return address_village;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public void setAddress_village(String address_village) {
